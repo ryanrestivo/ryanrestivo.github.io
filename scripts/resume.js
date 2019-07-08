@@ -9,6 +9,6 @@ var jobNewsday1 = new Job("Editorial Development Coordinator","Newsday","May 201
 var jobMLB = new Job("Content Coordinator","MLB Advanced Media","June 2009 - April 2016");
 var jobESPN = new Job("Quality Assurance Associate","ESPN Digital Media","September 2008 - June 2009");
 
-document.querySelector("#position1").innerHTML = jobNewsday2.title;
+document.querySelector("#position" + 1).innerHTML = jobNewsday2.title;
 
 document.querySelector("#position2").innerHTML = jobNewsday1.title;
