@@ -4,7 +4,6 @@ function Job(title,place,duration) {
   this.duration = duration;
 }
 
-
 //var job0 = new Job("Project Manager, Mobile Apps","Newsday","January 2019 - Present");
 //var job1 = new Job("Editorial Development Coordinator","Newsday","May 2016 - December 2018");
 //var job2 = new Job("Content Coordinator","MLB Advanced Media","June 2009 - April 2016");
@@ -18,3 +17,5 @@ for (let i = 0; i<jobs.length; i++) {
   document.querySelector(".place" + (i + 1)).innerHTML = jobs[i].place;
 }
 
+
+// document.querySelector("#position2").innerHTML = job1.title;
