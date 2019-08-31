@@ -18,5 +18,6 @@ for (let i = 0; i<jobs.length; i++) {
   }
 }
 
+document.querySelector("#position2skill4").innerHTML = document.querySelector("#position2skill4").innerText.replace("Weather Totals", "<a class='externalLink' href='https://projects.newsday.com/news/weather-totals/'>Weather Totals</a>")
 
 // document.querySelector("#position2").innerHTML = job1.title;
