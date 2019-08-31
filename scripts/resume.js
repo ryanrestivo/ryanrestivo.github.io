@@ -18,6 +18,30 @@ for (let i = 0; i<jobs.length; i++) {
   }
 }
 
-document.querySelector("#position2skill4").innerHTML = document.querySelector("#position2skill4").innerText.replace("Weather Totals", "<a class='externalLink' href='https://projects.newsday.com/news/weather-totals/'>Weather Totals</a>")
+// Special Cases
+// goal is to add a collapsible to these which shows images, and HTML of what happened
+// first find the ones that work for this
+document.querySelector("#position2skill4").innerHTML = document.querySelector("#position2skill4").innerText.replace("Newsday's Weather Totals map", "<a class='externalLink' href='https://projects.newsday.com/news/weather-totals/'>Newsday's Weather Totals map</a>")
+
+document.querySelector(".position2skill5").innerHTML = "Test!"
+/// ADD CONTENT TO THIS and IMAGE on AUGUST 31
+
+
+
+// collapser
+var coll = document.getElementsByClassName("collapsible");
+var a;
+
+for (a = 0; a < coll.length; a++) {
+  coll[a].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
 
 // document.querySelector("#position2").innerHTML = job1.title;
