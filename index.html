@@ -2,6 +2,7 @@
 <head>
   <!-- Code, with Style -->
   <link rel="stylesheet" href="style.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141257589-1"></script>
   <script>
@@ -11,31 +12,46 @@
 
     gtag('config', 'UA-141257589-1');
   </script>
-  <script src="scripts/script.js"></script>
   <h1>Ryan Restivo</h1>
 </head>
 <body>
+<!-- <a href="https://www.linkedin.com/in/ryanrestivo/?utm_source=restivo_site"> -->
+<img src="imgs/EHwbXqtXkAAN7Ig copy.jpg" alt="Ryan Restivo" width="12%" height="inherit">
+<p class="links"><a href="https://www.linkedin.com/in/ryanrestivo/?utm_source=restivo_site"><i class="fa fa-linkedin" style="font-size:50px;color:#2477b5"></i></a>
+<a href="https://twitter.com/ryanarestivo/?utm_source=restivo_site"><i class="fa fa-twitter" style="font-size:50px;color:#34a1f2"></i></a>
+<a href="https://github.com/ryanrestivo/?utm_source=restivo_site"><i class="fa fa-github" style="font-size:50px;color:black"></i></a>
+ </p>
 
-<p class="links"><a href="https://www.linkedin.com/in/ryanrestivo/?utm_source=restivo_site">LinkedIn</a> |
-<a href="https://github.com/ryanrestivo/?utm_source=restivo_site">GitHub</a> | </p>
+<p class="skills"></p>
 
+<p class="awards+certs"></p>
 
-<p class="resume-item"><strong id="position1">Most Recent Job</strong>, <em class="place1"></em> <strong class="duration1"></strong></p>
+<h2 class="resume-item"><strong id="position1">Most Recent Job</strong>, <em class="place1"></em> <strong class="duration1"></strong></h2>
 <ul>
   <li id="position1skill1"></li>
   <li id="position1skill2"></li>
   <li id="position1skill3"></li>
   <li id="position1skill4"></li>
   <li id="position1skill5"></li>
-  <li id="position1skill6"></li>
+  <li id="position1skill6"></li> <!--comment -->
+  <li id="position1skill7"></li>
+  <!-- <li id="position1skill8"></li> -->
 </ul>
-<p class="resume-item"><strong id="position2">Second Most Recent Job</strong>, <em class="place2"></em> <strong class="duration2"></strong></p>
+<h2 class="resume-item"><strong id="position2">Second Most Recent Job</strong>, <em class="place2"></em> <strong class="duration2"></strong></h2>
 <ul>
   <li id="position2skill1"></li>
   <li id="position2skill2"></li>
   <li id="position2skill3"></li>
-  <li id="position2skill4"></li>
-  <li id="position2skill5"></li>
+  <li id="position2skill4"></li><h4 id=expander1 class="collapsible">Learn More</h4>
+  <div class="content">
+    <p class="position2skill4">Content</p>
+    <img src="imgs/weather_bot_python.gif" alt="Weather Script">
+  </div>
+  <li id="position2skill5"></li><h4 id=expander2 class="collapsible">Learn More</h4>
+  <div class="content">
+    <p class="position2skill5">Content</p>
+    <img src="imgs/omniture_shell_script.gif" alt="Bash Shell Script">
+  </div>
   <li id="position2skill6"></li>
   <li id="position2skill7"></li>
   <li id="position2skill8"></li>
@@ -43,7 +59,7 @@
   <li id="position2skill10"></li>
   <li id="position2skill11"></li>
 </ul>
-<p class="resume-item"><strong id="position3">Third Most Recent Job</strong>, <em class="place3"></em> <strong class="duration3"></strong></p>
+<h2 class="resume-item"><strong id="position3">Third Most Recent Job</strong>, <em class="place3"></em> <strong class="duration3"></strong></h2>
 <ul>
   <li id="position3skill1"></li>
   <li id="position3skill2"></li>
@@ -53,12 +69,14 @@
   <li id="position3skill6"></li>
   <li id="position3skill7"></li>
 </ul>
-<p class="resume-item"><strong id="position4">Fourth Most Recent Job</strong>, <em class="place4"></em> <strong class="duration4"></strong></p>
+<h2 class="resume-item"><strong id="position4">Fourth Most Recent Job</strong>, <em class="place4"></em> <strong class="duration4"></strong></h2>
 <ul>
   <li id="position4skill1"></li>
   <li id="position4skill2"></li>
 <ul>
 
 <script src="scripts/resume.js"></script>
+<!-- load other JS after main resume JS -->
+<script src="scripts/script.js"></script>
 </body>
 </html>

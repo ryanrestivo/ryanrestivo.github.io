@@ -1,13 +1,59 @@
 #testcss
+
+* {
+    font-family: sans-serif;
+}
+
 body {
-  background-color: powderblue;
+  font-family: sans-serif;
+  padding:20px;
+  line-height:1.4em;
+  max-width:1200px;
+  margin:0 auto;
+  background:#f7f7f7;
 }
+
 h1 {
-  color: blue;
+  color: #294ea0;
+  font-size: -webkit-xxx-large;
 }
+
+h2.resume-item {
+    font-size: 20px;
+}
+
 p {
-  color: red;
+  color: #2d2d2d;
 }
 strong.position {
   color: #008fff;
   }
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
+
+
+/* change color of the H4's to use later - make them collapsible */
+
+
+h4 {
+      color: #294ea0;
+  }
+
+h4.collapsible {
+      margin: 4px;
+      font-size: 14px;
+  }
+
+li.contain {
+      list-style-type: circle;
+  }
+
+h3 {
+  color: #294ea0;
+}
