@@ -209,7 +209,8 @@ function animateCounters() {
       if (entry.isIntersecting) {
         const el = entry.target;
         const target = parseInt(el.dataset.target);
-        const duration = 2000;
+        const hasComma = el.dataset.comma === 'true';
+        const duration = 3500;
         const startTime = performance.now();
 
         function update(currentTime) {
@@ -218,11 +219,11 @@ function animateCounters() {
           // Ease out cubic
           const eased = 1 - Math.pow(1 - progress, 3);
           const current = Math.round(eased * target);
-          el.textContent = current;
+          el.textContent = hasComma ? current.toLocaleString('en-US') : current;
           if (progress < 1) {
             requestAnimationFrame(update);
           } else {
-            el.textContent = target;
+            el.textContent = hasComma ? target.toLocaleString('en-US') : target;
           }
         }
         requestAnimationFrame(update);
