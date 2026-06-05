@@ -30,8 +30,8 @@ This document describes how `ryanrestivo.github.io` was built from scratch in a 
 ### Zero Dependencies
 Every piece of functionality is hand-built. No npm install, no build step, no framework compilation. The total page weight is ~64KB of unminified HTML + CSS + JS — loads instantly even on 3G.
 
-### Design System from web-yeseo.com
-The color palette (sky blues `#0ea5e9` → `#1d4e8a`), typography (Nunito + Inter), gradient backgrounds, and card-based layout philosophy are all carried directly from the YESEO web-yeseo production site for brand consistency.
+### Design System from yeseo.app.com
+The color palette (sky blues `#0ea5e9` → `#1d4e8a`), typography (Nunito + Inter), gradient backgrounds, and card-based layout philosophy are all carried directly from the YESEO yeseo.app production site for brand consistency.
 
 ### 20+ Custom Animations
 - `@keyframes fadeUp` — section elements entering viewport
@@ -134,14 +134,14 @@ Edit the `:root` block in `style.css`:
 ## Provenance
 
 This site was:
-- **Brainstormed** by analyzing web-yeseo.com's design patterns for brand consistency
+- **Brainstormed** by analyzing yeseo.app.com's design patterns for brand consistency
 - **Sourced** from Ryan Restivo's professional resume and cover letter text
-- **Compiled** from 22 press entries in the web-yeseo Press.jsx component
-- **Built** entirely by an autonomous AI agent (Hermes) using Claude model for generation
+- **Compiled** from 22 press entries in the yeseo.app Press.jsx component
+- **Built** entirely by an autonomous AI agent (Hermes) running Ollama with Qwen 3.6 latest on an M4 MacBook Pro for generation
 - **Reviewed** via GitHub Pull Request #14
 
 See the README.md at the repository root for full technical documentation and the BUILD.md file you're reading right now for this build provenance.
 
 ---
 
-Built with Hermes Agent + Claude model — zero manual coding.
+Built with Hermes Agent running Ollama + Qwen 3.6 latest on an M4 MacBook Pro — zero manual coding.
