@@ -1,0 +1,35 @@
+/* ===== PR 15 additional styles (commit 5) ===== */
+
+/* --- Larger YouTube embed --- */
+.youtube-embed-section-large {
+  margin-bottom: 48px;
+}
+.youtube-embed-section-large .youtube-embed-card {
+  margin: 0 auto;
+  max-width: 860px;
+}
+.youtube-wrapper-large {
+  max-width: 860px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+.youtube-wrapper-large iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* --- Press feature images: size down + clickable --- */
+.press-img-link {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: opacity 0.2s ease;
+}
+.press-img-link:hover {
+  opacity: 0.82;
+}
