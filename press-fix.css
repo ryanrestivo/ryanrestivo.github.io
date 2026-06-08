@@ -1,0 +1,541 @@
+/* =========================================
+   press-styles.css
+   CSS for all classes added in the PR 15
+   redesign that were missing.
+   ========================================= */
+
+/* === BUTTONS (.btn-action) === */
+.btn-action {
+  display: inline-block;
+  padding: 14px 28px;
+  background: var(--blue-500);
+  color: var(--white);
+  border-radius: var(--radius-lg);
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-action:hover {
+  background: var(--blue-600);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.3);
+}
+
+/* Full-width hero button */
+.btn-row-full {
+  width: 100%;
+  text-align: center;
+}
+
+/* === BUTTON GRID (.hero-actions) === */
+.hero-actions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin: 28px 0 20px;
+  animation: scaleIn 0.8s ease 0.4s forwards;
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .hero-actions {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* === HERO BUTTONS (already styled in master.css as .btn) === */
+/* Note: .btn-action overrides .btn for this section */
+
+/* === STAT NUMBER ITEM ANIMATION === */
+.stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--blue-800);
+  line-height: 1;
+}
+
+.stat-value {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  line-height: 1;
+}
+
+.stat-suffix {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--blue-800);
+  line-height: 1;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--gray-600);
+  font-weight: 500;
+  text-align: center;
+}
+
+.stat-divider {
+  width: 2px;
+  height: 48px;
+  background: var(--gray-200);
+  align-self: center;
+  border-radius: 1px;
+}
+
+/* === HERO PHOTO === */
+.hero-photo {
+  width: 100%;
+  height: auto;
+  aspect-ratio: unset;
+  border-radius: var(--radius-xl);
+  box-shadow: 0 8px 40px rgba(0,0,0,0.08);
+  border: 6px solid var(--white);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero-photo:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 50px rgba(14,165,233,0.25);
+}
+
+/* Hero visual backdrop blur */
+.hero-visual::after {
+  content: '';
+  position: absolute;
+  inset: -20px;
+  background: linear-gradient(135deg, rgba(14,165,233,0.05) 0%, rgba(99,102,241,0.05) 100%);
+  border-radius: calc(var(--radius-xl) + 20px);
+  z-index: -1;
+  filter: blur(20px);
+}
+
+.hero-visual {
+  position: relative;
+}
+
+/* === PRESS FEATURED CARDS === */
+.press-featured-card {
+  display: flex;
+  gap: 28px;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--gray-100);
+  transition: box-shadow 0.3s ease;
+}
+
+.press-featured-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+
+.press-featured-logo {
+  width: 180px;
+  min-width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.press-featured-logo:hover {
+  opacity: 0.85;
+}
+
+.press-featured-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.press-featured-type {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 99px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  width: fit-content;
+}
+
+.press-featured-type.award {
+  background: rgba(245,158,11,0.1);
+  color: #d97706;
+}
+
+.press-featured-type.partnership {
+  background: rgba(139,92,246,0.1);
+  color: #8b5cf6;
+}
+
+.press-featured-type.lecture {
+  background: rgba(15,203,74,0.1);
+  color: #16a34a;
+}
+
+.press-featured-type.speaking {
+  background: rgba(225,29,72,0.1);
+  color: #e11d48;
+}
+
+.press-featured-type.podcast {
+  background: rgba(34,211,238,0.1);
+  color: #0891b2;
+}
+
+.press-featured-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin: 0;
+}
+
+.press-featured-summary {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--gray-700);
+  margin: 0;
+}
+
+.press-featured-link {
+  display: inline-block;
+  margin-top: auto;
+  color: var(--blue-600);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.press-featured-link:hover {
+  color: var(--blue-800);
+  text-decoration: underline;
+}
+
+/* === LARGER YOUTUBE EMBED === */
+.youtube-wrapper-large {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.youtube-wrapper-large iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* === PRESS STORIES GRID === */
+.press-stories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px;
+}
+
+.press-story-card {
+  display: block;
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+  border: 1px solid var(--gray-100);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.press-story-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--blue-200);
+  transform: translateY(-2px);
+}
+
+.press-story-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.press-item {
+  display: block;
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+  border: 1px solid var(--gray-100);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.press-item:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--blue-200);
+  transform: translateY(-2px);
+}
+
+.press-item h4 {
+  margin: 0 0 8px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--gray-900);
+  line-height: 1.4;
+}
+
+.press-source {
+  font-size: 0.85rem;
+  color: var(--gray-600);
+  font-weight: 500;
+}
+
+.press-date {
+  font-size: 0.8rem;
+  color: var(--gray-400);
+  margin-left: 8px;
+}
+
+.press-type {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 3px 10px;
+  border-radius: 99px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.press-type.press {
+  background: rgba(59,130,246,0.08);
+  color: var(--blue-700);
+}
+
+.press-type.award {
+  background: rgba(245,158,11,0.1);
+  color: #d97706;
+}
+
+.press-type.video {
+  background: rgba(225,29,72,0.08);
+  color: var(--rose-600);
+}
+
+.press-type.podcast {
+  background: rgba(139,92,246,0.08);
+  color: #8b5cf6;
+}
+
+.press-type.speaking {
+  background: rgba(15,203,74,0.08);
+  color: #16a34a;
+}
+
+/* === YOUTUBE EMBED === */
+.youtube-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  margin-top: 16px;
+}
+
+.youtube-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Larger YouTube embed section */
+.youtube-embed-section-large {
+  margin-bottom: 48px;
+}
+
+.youtube-embed-section-large .youtube-embed-card {
+  margin: 0 auto;
+  max-width: 860px;
+}
+
+/* Badge */
+.youtube-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  background: rgba(255,0,0,0.08);
+  color: #e11d48;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border-radius: 99px;
+  width: fit-content;
+  margin-bottom: 12px;
+}
+
+.rec-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #e11d48;
+  border-radius: 50%;
+  animation: recPulse 1.5s infinite;
+}
+
+@keyframes recPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.youtube-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--gray-900);
+  margin: 0 0 8px 0;
+}
+
+.youtube-sub {
+  font-size: 0.9rem;
+  color: var(--gray-600);
+  margin: 0 0 16px 0;
+}
+
+.btn-yt {
+  display: inline-block;
+  padding: 10px 24px;
+  background: var(--blue-500);
+  color: var(--white);
+  border-radius: var(--radius-lg);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-yt:hover {
+  background: var(--blue-600);
+  transform: translateY(-1px);
+}
+
+.youtube-link-row {
+  margin-top: 16px;
+}
+
+/* === PROJECT APP LINKS === */
+.project-app-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.project-app-store-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  background: var(--blue-50);
+  border: 1px solid var(--blue-200);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.project-app-store-link:hover {
+  background: var(--blue-100);
+  border-color: var(--blue-400);
+}
+
+.app-store-icon {
+  font-size: 1.3rem;
+}
+
+.app-store-text {
+  color: var(--blue-700);
+}
+
+.project-app-link-secondary {
+  font-size: 0.85rem;
+  color: var(--blue-600);
+  text-decoration: none;
+  padding: 4px 8px;
+  transition: color 0.2s ease;
+}
+
+.project-app-link-secondary:hover {
+  color: var(--blue-800);
+  text-decoration: underline;
+}
+
+/* === PRESS LINKS (inline) === */
+.press-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.press-tag {
+  font-size: 0.85rem;
+  color: var(--gray-500);
+  font-weight: 600;
+}
+
+.press-links a {
+  font-size: 0.85rem;
+  color: var(--blue-600);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.press-links a:hover {
+  color: var(--blue-800);
+  text-decoration: underline;
+}
+
+/* === PRESS GRID (existing) === */
+.press-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+/* === SCROLL REAVEAL (delay) === */
+.reveal-delay-1 { transition-delay: 0ms; }
+.reveal-delay-2 { transition-delay: 100ms; }
+.reveal-delay-3 { transition-delay: 200ms; }
+.reveal-delay-4 { transition-delay: 300ms; }
+
+/* === SMALLER PRESS LOGOS === */
+.press-img-link {
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+}
