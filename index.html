@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ryan Restivo — Product Leader, AI Innovator, Entrepreneur</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Nunito:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script type="application/ld+json">
     {
@@ -42,6 +43,7 @@
 
 <!-- ==== HERO ==== -->
 <section id="hero" class="hero">
+  <div class="hero-bg"></div>
   <div class="hero-orb orb-1"></div>
   <div class="hero-orb orb-2"></div>
   <div class="hero-orb orb-3"></div>
@@ -49,9 +51,11 @@
   <div class="container hero-inner">
     <div class="hero-content" id="hero-content">
       <!-- <div class="hero-badge">Ryan Restivo</div> -->
+      <span class="section-tag">Hero</span>
       <h1 class="hero-title">
         <span class="greeting">Hi, I'm</span>
         <span class="name">Ryan Restivo</span>
+        <span class="hero-accent">Product Leader &amp; AI Innovator</span>
       </h1>
       <p class="hero-tagline">I don't just see inefficiencies — I solve them. Product leader at the intersection of <strong>AI</strong>, <strong>mobile</strong>, and <strong>newsroom technology</strong>, dedicated to empowering journalists and building the tools they need to do their best work. Whether through product thinking or software I build myself, <a href="https://awards.journalists.org/2024/08/09/ona-reveals-the-2024-online-journalism-awards-finalists/" target="_blank" rel="noopener">I dig in, find the right solution, and create opportunity for others</a>.</p>
 
@@ -473,32 +477,47 @@
 
 <!-- ==== FOOTER ==== -->
 <footer id="footer" class="footer">
-  <div class="container">
-    <div class="footer-inner">
-      <div class="footer-left">
-        <h3>Ryan Restivo</h3>
-        <p>Product Leader &amp; AI Innovator</p>
+  <div class="footer-grid">
+    <div class="footer-left">
+      <h3>Ryan Restivo</h3>
+      <p>Product Leader &amp; AI Innovator helping journalists use AI to do their best work.</p>
+      <div class="footer-social">
+        <a href="https://linkedin.com/in/ryanrestivo" target="_blank" rel="noopener" class="footer-social-link" aria-label="LinkedIn">in</a>
+        <a href="https://github.com/ryanrestivo" target="_blank" rel="noopener" class="footer-social-link" aria-label="GitHub">gh</a>
+        <a href="https://yeseo.app" target="_blank" rel="noopener" class="footer-social-link" aria-label="YESEO">Y</a>
+        <a href="https://yeseo.app/contact" target="_blank" rel="noopener" class="footer-social-link" aria-label="Email">@</a>
       </div>
-      <div class="footer-links">
-        <a href="https://linkedin.com/in/ryanrestivo" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://yeseo.app" target="_blank" rel="noopener">YESEO</a>
-        <!-- <a href="https://twitter.com/ryanarestivo" target="_blank" rel="noopener">Twitter / X</a> -->
+    </div>
+    <div class="footer-center">
+      <div>
+        <h4>Navigation</h4>
+        <a href="#hero">Home</a><br>
+        <a href="#about">About</a><br>
+        <a href="#experience">Experience</a><br>
+        <a href="#projects">Projects</a>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <a href="https://linkedin.com/in/ryanrestivo" target="_blank" rel="noopener">LinkedIn</a><br>
+        <a href="https://yeseo.app/contact" target="_blank" rel="noopener">Contact</a><br>
+        <a href="https://yeseo.app/press" target="_blank" rel="noopener">Press</a><br>
         <a href="https://github.com/ryanrestivo" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://yeseo.app/contact">Email</a>
-      </div>
-      <div class="footer-visual">
-        <svg width="120" height="60" viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 30 Q30 0 60 30 Q90 60 120 30" fill="none" stroke="#0369a1" stroke-width="2" stroke-opacity="0.3"/>
-          <path d="M0 30 Q30 60 60 30 Q90 0 120 30" fill="none" stroke="#0ea5e9" stroke-width="2" stroke-opacity="0.2"/>
-        </svg>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>© 2026 Ryan Restivo. Built with Hermes Agent running Ollama + Qwen 3.6 latest on an M4 MacBook Pro, then followed by manual editing for length, clarity and language from Ryan Restivo.</p>
-      <p class="build-provenance" style="margin-top:12px;font-size:0.78rem;color:var(--gray-500);max-width:780px;text-align:center;">
-        Powered by <a href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noopener">Hermes Agent</a> (autonomous CLI-driven AI agent with full toolchain: browser, terminal, file, code, git, PR automation) + a local large language model — built entirely via autonomous agent workflows: chrome + curl for data collection → qwen 3.6:latest for generation → hermes-agent for orchestration → python3.11.5 for scripting. All data sourced from Ryan Restivo's public professional resume, cover letter, and yeseo.app press page via hermes-agent session context.
-      </p>
+    <div class="footer-right">
+      <h4>Stay Updated</h4>
+      <p class="footer-newsletter">Get newsroom tech and AI insights delivered to your inbox. No spam, no fluff.</p>
+      <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Coming soon! Subscribe via LinkedIn for updates.');">
+        <input type="email" placeholder="your@email.com" aria-label="Email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
     </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Ryan Restivo. Built with Hermes Agent running Ollama + Qwen 3.6 latest on an M4 MacBook Pro, then followed by manual editing for length, clarity and language from Ryan Restivo.</p>
+    <p class="build-provenance" style="margin-top:12px;font-size:0.78rem;color:var(--gray-500);max-width:780px;text-align:center;">
+      Powered by <a href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noopener">Hermes Agent</a> (autonomous CLI-driven AI agent with full toolchain: browser, terminal, file, code, git, PR automation) + a local large language model — built entirely via autonomous agent workflows: chrome + curl for data collection → qwen 3.6:latest for generation → hermes-agent for orchestration → python3.11.5 for scripting. All data sourced from Ryan Restivo's public professional resume, cover letter, and yeseo.app press page via hermes-agent session context.
+    </p>
   </div>
 </footer>
 
