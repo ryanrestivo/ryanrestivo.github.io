@@ -333,6 +333,7 @@ a:hover {
   border-radius: inherit;
   opacity: 0;
   transition: opacity var(--transition);
+  pointer-events: none;
 }
 
 /* Button 1 — deep blue gradient */
@@ -341,10 +342,8 @@ a:hover {
   color: #ffffff;
   box-shadow: 0 4px 14px rgba(37,99,235,0.25), inset 0 1px 0 rgba(255,255,255,0.12);
 }
-.btn-action:nth-of-type(1)::before {
-  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
-}
 .btn-action:nth-of-type(1):hover {
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
   transform: translateY(-3px);
   box-shadow: 0 8px 28px rgba(37,99,235,0.35), inset 0 1px 0 rgba(255,255,255,0.15);
   color: #ffffff;
@@ -357,10 +356,8 @@ a:hover {
   border: 1.5px solid #cbd5e1;
   box-shadow: 0 2px 10px rgba(148,163,184,0.15), inset 0 1px 0 #ffffff;
 }
-.btn-action:nth-of-type(2)::before {
-  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-}
 .btn-action:nth-of-type(2):hover {
+  background: linear-gradient(135deg, #d1d5db 0%, #e5e7eb 50%, #d6d8db 100%);
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(148,163,184,0.25), inset 0 1px 0 #ffffff;
   border-color: #94a3b8;
@@ -374,14 +371,12 @@ a:hover {
   border: 1.5px solid #7dd3fc;
   box-shadow: 0 2px 10px rgba(56,189,248,0.12), inset 0 1px 0 #ffffff;
 }
-.btn-action:nth-of-type(3)::before {
-  background: linear-gradient(135deg, #e0f2fe 0%, #7dd3fc 100%);
-}
 .btn-action:nth-of-type(3):hover {
+  background: linear-gradient(135deg, #e0f2fe 0%, #7dd3fc 100%);
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(56,189,248,0.22), inset 0 1px 0 #ffffff;
   border-color: #38bdf8;
-  color: #0c4a6e;
+  color: #073952;
 }
 
 /* Button 4 — rose / coral for CTA feel */
@@ -391,18 +386,16 @@ a:hover {
   border: 1.5px solid #fecdd3;
   box-shadow: 0 2px 10px rgba(251,113,133,0.12), inset 0 1px 0 #ffffff;
 }
-.btn-action:nth-of-type(4)::before {
-  background: linear-gradient(135deg, #ffe4e6 0%, #fda4af 100%);
-}
 .btn-action:nth-of-type(4):hover {
+  background: linear-gradient(135deg, #ffe4e6 0%, #fda4af 100%);
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(251,113,133,0.22), inset 0 1px 0 #ffffff;
   border-color: #fb7185;
-  color: #881337;
+  color: #6b0f2a;
 }
 
 .btn-action:hover::before {
-  opacity: 1;
+  opacity: 0;
 }
 
 .btn-action::after {
