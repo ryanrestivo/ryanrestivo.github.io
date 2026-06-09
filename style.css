@@ -261,7 +261,7 @@ a:hover {
 }
 
 .hero-title {
-  opacity: 0;
+  opacity: 1;
 }
 
 .hero-title .greeting {
