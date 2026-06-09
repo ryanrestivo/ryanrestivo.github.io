@@ -1,7 +1,41 @@
 /* ============================================
    Ryan Restivo — Living Resume Portfolio
    DEEP LENFEST/POYNTER REDESIGN
-   ============================================
+   ============================================ 
+   ╔════════════════════════════════════╗
+   ║                                    ║
+   ║   YESEO ASCII LOGO (for the      ║
+   ║   curious who inspect source)     ║
+   ║                                    ║
+   ║    ▓▓▓  ▓▓▓  ▓▓▓  ▓▓▓  ▓▓▓       ║
+   ║    ▓  ▓  ▓▓▓   █▓  ▓▓▓  ▓  ▓       ║
+   ║    ▓▓▓  ▓  ▓   █▓  ▓  ▓  ▓▓▓       ║
+   ║    ▓  ▓  ▓▓▓   █▓  ▓▓▓  ▓  ▓       ║
+   ║    ▓▓▓  ▓▓▓   ▓▓▓  ▓▓▓  ▓▓▓       ║
+   ║                                    ║
+   ║   "SEO that doesn't steal time"  ║
+   ║                                    ║
+   ╚════════════════════════════════════╝
+*/
+
+/*
+ * Easter eggs hidden in the CSS:
+ * 
+ *   If you're reading this stylesheet source, here's a secret:
+ * 
+ *       .          .
+ *     /'   .   .  '/
+ *    |.  · . .  ·.|
+ *    |· (   ∴   ) ·|
+ *     \  ` ·  ´  /
+ *       '.  .  .'
+ *         '──'
+ * 
+ *   This portfolio was made with coffee and care.
+ *   ~97% caffeine, ~3% CSS.
+ */
+
+/* === RESET & BASE === */
  */
 
 /* === RESET & BASE === */
