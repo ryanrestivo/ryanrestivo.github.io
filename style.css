@@ -1,17 +1,18 @@
 /* ============================================
    Ryan Restivo — Living Resume Portfolio
    DEEP LENFEST/POYNTER REDESIGN
-   ============================================ 
+   ============================================
    ╔════════════════════════════════════╗
    ║                                    ║
-   ║   YESEO ASCII LOGO (for the      ║
+   ║   RYAN ASCII LOGO (for the      ║
    ║   curious who inspect source)     ║
    ║                                    ║
-   ║    ▓▓▓  ▓▓▓  ▓▓▓  ▓▓▓  ▓▓▓       ║
-   ║    ▓  ▓  ▓▓▓   █▓  ▓▓▓  ▓  ▓       ║
-   ║    ▓▓▓  ▓  ▓   █▓  ▓  ▓  ▓▓▓       ║
-   ║    ▓  ▓  ▓▓▓   █▓  ▓▓▓  ▓  ▓       ║
-   ║    ▓▓▓  ▓▓▓   ▓▓▓  ▓▓▓  ▓▓▓       ║
+   ║    █████╗ ██╗ █████╗                ║
+   ║   ██╔══██╗██║ ██╔══██╗             ║
+   ║   ███████║██║ ███████║             ║
+   ║   ██╔══██║██║ ██╔══██║             ║
+   ║   ██║  ██║██║ ██║  ██║             ║
+   ║   ╚═╝  ╚═╝╚═╝ ╚═╝  ╚═╝             ║
    ║                                    ║
    ║   "SEO that doesn't steal time"  ║
    ║                                    ║
@@ -248,7 +249,7 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 340px;
   gap: 60px;
-  align-items: center;
+  align-items: start;
   padding-top: 100px;
   padding-bottom: 100px;
   max-width: 1120px;
@@ -768,7 +769,7 @@ a:hover {
 
 .press-featured-card {
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 28px;
   background: var(--white);
   border-radius: var(--radius-md);
@@ -777,10 +778,23 @@ a:hover {
   overflow: hidden;
 }
 
-.press-featured-logo {
+/* Image side — ensure full image is visible on desktop */
+.press-featured-card > a:first-child {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  min-height: 320px;
+  display: block;
+  position: relative;
+  overflow: visible;
+}
+
+.press-featured-logo {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 400px;
+  object-fit: contain !important;
+  object-position: center;
+  display: block;
 }
 
 .press-featured-content {
