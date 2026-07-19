@@ -77,153 +77,164 @@
 </head>
 <body>
 
-<!-- ==== HERO — web-yeseo BLUE GRADIENT ==== -->
+<!-- ==== HERO — LENFEST-INSPIRED: clean white, serif name, simple nav-style buttons ==== -->
 <section id="hero" class="hero">
   <div class="container hero-inner">
     <div class="hero-content">
       <h1 class="hero-title">
-        <span class="hero-greeting">Hi, I'm</span>
-        <span class="hero-name">Ryan Restivo</span>
+        <!--
+           "Hi, I'm Ryan Restivo"
+           "Product Leader & AI Innovator"
+        -->
+        <span class="greeting">Hi, I'm</span>
+        <span class="name">Ryan Restivo</span>
       </h1>
-      <p class="hero-tagline">
-        Product leader &amp; creator building <strong>AI-powered tools</strong>, 
-        <strong>mobile platforms</strong>, and <strong>workflow automation</strong> across industries — 
-        from media and sports to healthcare and education. I've led teams at 
-        <em>Newsday</em>, built products for <em>30 MLB clubs</em>, and founded 
-        <a href="https://yeseo.app" target="_blank" rel="noopener"><strong>YESEO</strong></a>, a free AI tool now used in <strong>650+ environments</strong> across 11 languages. 
-        <strong>2024 Online Journalism Award Finalist</strong>. Over <strong>18,000 stories</strong> helped by tools I've built.
-      </p>
+      <p class="hero-accent">Building the tools journalists need to tell their stories better.</p>
+      <p class="hero-tagline">I dig in, find the right solution, and create opportunity for others. Product leader at the intersection of <strong>AI</strong>, <strong>mobile</strong>, and <strong>newsroom technology</strong> — from leading the full mobile platform modernization at Newsday to founding YESEO, the free SEO app serving 650+ newsrooms worldwide.</p>
 
+      <!-- Buttons: simple outline/coral — no transparency issues -->
       <div class="hero-actions">
-        <a href="#experience" class="btn btn-coral scroll-link">See My Work ↓</a>
+        <a href="#experience" class="btn btn-coral scroll-link">Explore My Journey ↓</a>
         <a href="https://yeseo.app" target="_blank" rel="noopener" class="btn btn-outline">YESEO App</a>
-        <a href="https://github.com/ryanrestivo" target="_blank" rel="noopener" class="btn btn-outline">GitHub Projects</a>
-        <a href="#press-section" class="btn btn-outline">Press &amp; Features</a>
+        <a href="https://yeseo.app/testimonials" target="_blank" rel="noopener" class="btn btn-outline">What People Are Saying</a>
+        <a href="https://yeseo.app/press" target="_blank" rel="noopener" class="btn btn-outline">Press Clippings</a>
       </div>
 
-      <div class="counter-row">
-        <div class="counter-item">
-          <span class="counter-value counter-value-amber"><strong>17</strong>+</span>
-          <span class="counter-label">Years Building Products</span>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-value">
+            <span class="stat-number" data-target="15" data-suffix="+" data-comma="false">0</span>
+            <span class="stat-suffix">+</span>
+          </div>
+          <span class="stat-label">Years of Digital Media Experience</span>
         </div>
-        <div class="counter-item">
-          <span class="counter-value counter-value-teal"><strong>650</strong>+</span>
-          <span class="counter-label">Live Deployments Created</span>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-value">
+            <span class="stat-number" data-target="690" data-suffix="" data-comma="false">0</span>
+            <span class="stat-suffix">+</span>
+          </div>
+          <span class="stat-label">YESEO Installs</span>
         </div>
-        <div class="counter-item">
-          <span class="counter-value"><strong>60,000</strong>+</span>
-          <span class="counter-label">Headlines Analyzed via AI</span>
-        </div>
-        <div class="counter-item">
-          <span class="counter-value counter-value-amber"><strong>265%</strong></span>
-          <span class="counter-label">Growth at Newsday</span>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-value">
+            <span class="stat-number" data-target="18700" data-suffix="" data-comma="true">0</span>
+            <span class="stat-suffix">+</span>
+          </div>
+          <span class="stat-label">Stories Entered into YESEO</span>
         </div>
       </div>
+    </div>
 
-      <div class="hero-photo-container">
-        <img src="https://www.newsmediahelpdesk.org/wp-content/uploads/2026/03/Ryan-Restivo-YESEO-creator-1200x800.jpg" alt="Ryan Restivo — Product Leader" class="hero-photo" loading="eager">
+    <!-- Right side: professional headshot -->
+    <div class="hero-visual">
+      <img src="https://www.newsmediahelpdesk.org/wp-content/uploads/2026/03/Ryan-Restivo-YESEO-creator-1200x800.jpg" alt="Ryan Restivo — Product Leader and AI Innovator" class="hero-photo" loading="eager">
+      <!-- Additional photo grid below hero image -->
+      <div class="hero-image-grid">
+        <img src="https://www.yeseo.app/IMG_7393.jpg" alt="Ryan Restivo at the Online Journalism Awards in Atlanta in 2024" class="hero-small-img" loading="lazy">
+        <img src="https://i.ytimg.com/vi/Guw7xJu4wyY/maxresdefault.jpg" alt="Oglethorpe Echo AI Collaboration" class="hero-small-img" loading="lazy">
       </div>
     </div>
   </div>
 </section>
 
-<!-- Wave divider -->
-<div class="section-divider">
-  <svg class="divider-wave" viewBox="0 0 1200 12" preserveAspectRatio="none" fill="#0f172a">
-    <path d="M0,0 C300,12 900,12 1200,0 L1200,12 L0,12 Z"></path>
-  </svg>
-</div>
-
-<!-- === ABOUT === -->
-<section id="about" class="section">
+<!-- ==== ABOUT — LENFEST-INSPIRED: generous spacing, serif headings, image cards ==== -->
+<section id="about" class="section section-alt">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">About</span>
-      <h2 class="section-title">Beyond the Headline</h2>
+      <span class="section-tag">About Me</span>
+      <h2 class="section-title" style="font-style: italic; color: #656562;">Observing problems isn't enough — I like finding solutions that serve others.</h2>
     </div>
     <div class="about-grid">
       <div class="about-text">
-        <p>
-          I've spent <strong>17 years</strong> building things that people actually use — from the Newsday mobile app (SwiftUI, Jetpack Compose) that drove <strong>265% YoY subscriber growth</strong>, to <strong>YESEO</strong>, the free AI tool that helps people improve their SEO in real time.
-        </p>
-        <p>
-          Before AI, I led mobile platform modernization at Newsday across iOS, Android, and TV apps. Before that, I worked at MLB Advanced Media, building video pipelines and metadata systems for 30 professional sports franchises. I've also contributed to the Blue Ribbon College Basketball Yearbook and served as a <strong>2023-24 RJI Fellow</strong>.
-        </p>
-        <p>
-          Today, I'm an <strong>AI Innovator-in-Residence at West Virginia University</strong>, designing AI programming for the Reed School, delivering workshops, and advising on how technology can transform how teams work. I also continue to lead product and emerging technology efforts at Newsday.
-        </p>
-        <p>
-          <strong>What connects it all?</strong> I believe the best tools meet people where they already work. Whether that's Slack for journalists, a mobile app for readers, or an AI system for a newsroom — the goal is the same: remove friction and create opportunity.
-        </p>
+        <!--
+        ▓▓▓  ▓▓▓  ▓▓▓  ▓▓▓  ▓▓▓
+        █▓▓  ▓▓▓  ▓▓▓  ▓▓▓  ▓▓▓
+        ▓▓▓  ▓▓▓  ▓▓▓  ▓▓▓  ▓▓▓
+        █▓▓  ▓▓▓  ▓▓▓  ▓▓▓  ▓▓▓
+        ▓▓▓  ▓▓▓  ▓▓▓  ▓▓▓  ▓▓▓
+
+        RYAN — "Hi, I'm Ryan Restivo"
+        -->
+        <p>This philosophy has taken me through <strong>17+ years of digital media</strong>, from building the Newsday mobile platform that tripled in-app subscribers to founding <strong>YESEO</strong> as a Reynolds Journalism Institute fellow, to being a 2026 <strong>AI Innovator-in-Residence</strong> at West Virginia University.</p>
+        <p>I led the full mobile platform modernization at Newsday (SwiftUI, Jetpack Compose) across iOS and Android. YESEO grew from an <a href="https://rjionline.org/news/introducing-the-2022-2023-rji-fellows/">RJI Fellowship project</a> to a <a href="https://awards.journalists.org/entries/yeseo/">2024 Online Journalism Awards finalist</a>.</p>
+        <p>Most recently, I partnered with The Oglethorpe Echo on the JournalismAI Innovation Challenge supported by the Google News Initiative on ways AI can help news-academic partnerships, such as The Oglethorpe Echo at the University of Georgia. <strong>YESEO has helped over 18,000 stories</strong> with SEO best practices.</p>
+        <div class="hero-actions" style="margin-top: 20px; margin-bottom: 0;">
+          <a href="https://awards.journalists.org/2024/08/09/ona-reveals-the-2024-online-journalism-awards-finalists/" target="_blank" rel="noopener" class="btn btn-outline">2024 OJA Award Finalist ↗</a>
+          <a href="https://www.journalismai.info/programmes/innovation/innovation-challenge-2024/the-oglethorpe-echo" target="_blank" rel="noopener" class="btn btn-outline">JournalismAI Challenge ↗</a>
+        </div>
       </div>
       <div class="about-images">
-        <img src="https://rjionline.org/wp-content/uploads/sites/2/2025/10/restivor25100705-1024x576.jpg" alt="Ryan Restivo, RJI Fellow" class="about-img about-img-wide">
-        <img src="https://www.yeseo.app/Yeseo2.jpg" alt="Ryan Restivo speaking at WSB TV" class="about-img about-img-wide">
-        <img src="0-ryan-emily-wvu.jpg" alt="Ryan Restivo at WVU" class="about-img about-img-wide">
+        <img src="https://rjionline.org/wp-content/uploads/sites/2/2025/10/restivor25100705-1024x576.jpg" alt="Ryan Restivo, RJI Fellow" class="about-img-card" loading="lazy">
+        <img src="https://www.yeseo.app/Yeseo2.jpg" alt="Ryan Restivo speaking at WSB TV in Atlanta in 2025" class="about-img-card wide" loading="lazy">
+        <img src="0-ryan-emily-wvu.jpg" alt="Ryan Restivo with Emily Corio, Associate Director of the Reed School of Media & Communications at West Virginia University" class="about-img-card wide" loading="lazy">
       </div>
     </div>
   </div>
 </section>
 
-<!-- === EXPERIENCE === -->
-<section id="experience" class="section section-alt">
+<!-- ==== EXPERIENCE — LENFEST TIMELINE: clean line, ample spacing ==== -->
+<section id="experience" class="section">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag" style="background:var(--seo-amber-glow);color:#92400e;">Experience</span>
-      <h2 class="section-title">Where I've Been</h2>
+      <span class="section-tag">Experience</span>
+      <h2 class="section-title">Professional Journey</h2>
     </div>
-
     <div class="timeline" id="timeline">
-
-      <!-- WVU — Current -->
-      <div class="timeline-item active">
-        <div class="timeline-dot"></div>
+      <div class="timeline-item">
+        <div class="timeline-dot active"></div>
         <div class="timeline-card current-role">
-          <span class="timeline-date">Jan 2026 – Present</span>
+          <span class="timeline-date">Jan 2026 – May 2026</span>
           <h3 class="timeline-role">AI Innovator-in-Residence</h3>
-          <p class="timeline-org">West Virginia University — Reed School of Media</p>
+          <p class="timeline-org">West Virginia University</p>
           <ul class="timeline-bullets">
-            <li>Partnered with faculty to design AI-focused programming for media education</li>
-            <li>Delivering workshops and lectures on AI tools for students and faculty</li>
-            <li>Advising curriculum strategy on the role of AI in the modern workplace</li>
+            <li>Partnered with faculty at WVU's Reed School of Media to design AI-focused programming</li>
+            <li>Delivering workshops, training sessions, and lectures for students and faculty</li>
+            <li>Advising faculty on curriculum strategy and media education transformation</li>
           </ul>
         </div>
       </div>
-
-      <!-- Newsday — Current -->
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-card">
+          <span class="timeline-badge current">Current</span>
+          <span class="timeline-badge award">Winner: 2022 Press Club of Long Island — Best Use of Streaming Services</span>
           <span class="timeline-date">Oct 2021 – Present</span>
-          <h3 class="timeline-role">Director, Product & Emerging Technologies</h3>
+          <h3 class="timeline-role">Director, Product &amp; Emerging Technologies</h3>
           <p class="timeline-org">Newsday</p>
           <ul class="timeline-bullets">
-            <li>Led full mobile platform modernization (SwiftUI, Jetpack Compose) — iOS + Android</li>
-            <li>Drove <strong>265% YoY growth</strong> in in-app subscriber purchases</li>
-            <li>Led TV app launches across Apple TV, Roku, Fire, Google TV, Samsung TV</li>
-            <li>Drove data-informed UX strategy using analytics and qualitative research</li>
-            <li>Modernized leadership with automated dashboards and streamlined reporting</li>
+            <li>Led <a href="https://www.newsday.com/services/newsday-apps-ios-android-wdhvqyhx" target="_blank" rel="noopener">full mobile platform modernization (SwiftUI, Jetpack Compose)</a></li>
+            <li>Drove <strong>265% increase</strong> in subscriber growth year over year</li>
+            <li>Led cross-platform TV app launches across Apple TV, Roku, Fire, Google TV, and Samsung TV</li>
+            <li>Drove data-informed UX strategy using qualitative research and analytics</li>
+            <li>Modernized leadership with automated dashboards</li>
           </ul>
         </div>
       </div>
-
-      <!-- YESEO -->
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-card">
+          <span class="timeline-badge current">Current</span>
+          <span class="timeline-badge award">Finalist: 2024 Online Journalism Awards — Excellence in AI Innovation</span>
           <span class="timeline-date">Feb 2023 – Present</span>
-          <h3 class="timeline-role">Founder & Creator</h3>
-          <p class="timeline-org">YESEO</p>
+          <h3 class="timeline-role">Founder &amp; Creator</h3>
+          <p class="timeline-org">YESEO App</p>
           <ul class="timeline-bullets">
-            <li>Free AI tool helping professionals improve SEO in real time via Slack</li>
-            <li><strong>650+ installations</strong> across 11 languages at newsrooms globally</li>
-            <li>Partnered with The Oglethorpe Echo in the Google News Initiative's JournalismAI Challenge</li>
-            <li><strong>2024 OJA Award Finalist</strong> — Excellence in AI Innovation (from 182 global entries)</li>
+            <li>Free Slack app helping journalists with SEO best practices in real-time</li>
+            <li>Partnered with The Oglethorpe Echo in the <a href="https://www.journalismai.info/programmes/innovation/innovation-challenge-2024/the-oglethorpe-echo" target="_blank" rel="noopener">JournalismAI Innovation Challenge</a></li>
+            <li>Launched features tested by 10 partner newsrooms</li>
+            <li>Garnered <strong>650+ installations</strong> across 11 languages</li>
           </ul>
+          <div class="press-links">
+            <span class="press-tag">Praise:</span>
+            <a href="https://www.journalismai.info/programmes/innovation/innovation-challenge-2024/the-oglethorpe-echo" target="_blank" rel="noopener">JournalismAI</a>
+            <a href="https://www.niemanlab.org/2024/08/how-7-news-audience-directors-are-thinking-about-responding-to-googles-ai-overviews/" target="_blank" rel="noopener">Nieman Lab</a>
+            <a href="https://awards.journalists.org/entries/yeseo/" target="_blank" rel="noopener">ONA</a>
+            <a href="https://ijnet.org/en/story/how-i-built-yeseo-help-newsrooms-incorporate-seo-best-practices" target="_blank" rel="noopener">IJNet</a>
+          </div>
         </div>
       </div>
-
-      <!-- RJI Fellow -->
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-card">
@@ -233,16 +244,15 @@
           <ul class="timeline-bullets">
             <li>Built a Slack app to help newsrooms with SEO best practices</li>
             <li>Collaborated with industry experts to identify key challenges</li>
-            <li>Validated product viability through testing with partner newsrooms</li>
+            <li>Validated product viability through testing with a partner newsroom</li>
             <li>Authored monthly progress stories for the wider industry</li>
           </ul>
         </div>
       </div>
-
-      <!-- Newsday PM -->
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-card">
+          <span class="timeline-badge award">Winner: 2019 Local Media Digital Innovation Awards — Best Branded Content</span>
           <span class="timeline-date">Jan 2019 – Sep 2021</span>
           <h3 class="timeline-role">Project Manager, Mobile Apps</h3>
           <p class="timeline-org">Newsday</p>
@@ -251,8 +261,6 @@
           </ul>
         </div>
       </div>
-
-      <!-- Newsday Editorial -->
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-card">
@@ -267,51 +275,49 @@
           </ul>
         </div>
       </div>
-
-      <!-- MLB -->
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-card">
           <span class="timeline-date">Jun 2009 – Apr 2016</span>
           <h3 class="timeline-role">Content Coordinator</h3>
-          <p class="timeline-org"><strong>MLB Advanced Media</strong></p>
+          <p class="timeline-org"><strong>MLBAM</strong> (MLB Advanced Media)</p>
           <ul class="timeline-bullets">
             <li>Maintained requests from all 30 MLB clubs, trained and supervised Production Assistants</li>
             <li>Overseen video transcoding and metadata quality control</li>
           </ul>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- === FEATURED PROJECTS === -->
-<section id="projects" class="section">
+<!-- ==== WHAT I'VE BUILT — LENFEST FEATURED CARDS ==== -->
+<section id="projects" class="section section-alt">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">Featured Projects</span>
+      <span class="section-tag">Signature Projects</span>
       <h2 class="section-title">What I've Built</h2>
-      <p class="section-subtitle">AI tools, mobile platforms, and workflow automation — across multiple industries.</p>
     </div>
 
+    <!-- Featured: Oglethorpe Echo collaboration -->
     <div class="youtube-embed-section-large">
       <div class="youtube-embed-card reveal">
         <div class="youtube-badge"><span class="rec-dot"></span> Featured Collaboration</div>
         <h3 class="youtube-title">How The Oglethorpe Echo Boosted Newsroom With AI</h3>
-        <p class="youtube-sub">JournalismAI Innovation Challenge · Google News Initiative · Nov 2024</p>
+        <p class="youtube-sub">JournalismAI Innovation Challenge Supported by the Google News Initiative · Nov 2024</p>
         <div class="youtube-wrapper-large">
           <iframe src="https://www.youtube.com/embed/Guw7xJu4wyY" title="The Oglethorpe Echo AI collaboration" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
         </div>
         <div class="youtube-link-row">
-          <a href="https://www.journalismai.info/programmes/innovation/innovation-challenge-2024/the-oglethorpe-echo" target="_blank" rel="noopener" class="btn-yt">Read Case Study ↗</a>
+          <a href="https://www.journalismai.info/programmes/innovation/innovation-challenge-2024/the-oglethorpe-echo" target="_blank" rel="noopener" class="btn-yt">
+            Read Case Study
+          </a>
         </div>
       </div>
     </div>
 
     <div class="projects-grid">
-
-      <!-- YESEO card -->
+      <!-- YESEO -->
       <div class="project-card reveal">
         <div class="project-card-header">
           <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
@@ -322,8 +328,23 @@
           </svg>
           <span class="project-status">Live — 650+ installs</span>
         </div>
-        <h3>YESEO — AI-Powered SEO in Slack</h3>
-        <p>A free Slack app that helps professionals improve SEO best practices in real time: generate SEO headlines, keyword research, readability analysis, and competitor headline search.</p>
+        <h3>YESEO — SEO Slack App for Newsrooms</h3>
+        <!--
+        ██╗ ██████╗ ██╗ ███████╗
+        ██║ ██╔══██╗██║ ██╔════╝
+        ██║ ██║  ██║██║ ███████╗
+        ██║ ██║  ██║██║ ╚════██║
+        ██║ ███████║██║ ███████║
+        ╚═╝ ╚═══██╔╝╚═╝ ╚══════╝
+        RYAN — "hi, i'm ryan"
+        -->
+        <!--
+        "SEO that doesn't steal your time"
+        
+          [1337] You found another one!
+          [31337] Keep looking... there's more 😉
+        -->
+        <p>A free Slack app that helps journalists improve SEO best practices in real-time: generate SEO headlines, keyword research, readability analysis, and competitor headline search — all inside the Slack workflow.</p>
         <div class="project-tags">
           <span class="tag">AI / LLM</span><span class="tag">Slack Bot</span><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MongoDB</span>
         </div>
@@ -332,7 +353,8 @@
           <div class="metric"><span class="metric-value">11</span><span class="metric-label">Languages</span></div>
           <div class="metric"><span class="metric-value">60,000+</span><span class="metric-label">Headlines Served</span></div>
         </div>
-        <a href="https://yeseo.app" target="_blank" rel="noopener" class="project-link">Try YESEO ↗</a>
+        <div class="press-links" style="margin-top:8px;"><span class="press-tag">Praise:</span> <a href="https://awards.journalists.org/entries/yeseo/" target="_blank" rel="noopener">ONA</a> <a href="https://www.niemanlab.org/2024/08/how-7-news-audience-directors-are-thinking-about-responding-to-googles-ai-overviews/" target="_blank" rel="noopener">Nieman Lab</a> <a href="https://ijnet.org/en/story/how-i-built-yeseo-help-newsrooms-incorporate-seo-best-practices/" target="_blank" rel="noopener">IJNet</a></div>
+        <a href="https://yeseo.app" target="_blank" rel="noopener" class="project-link" style="margin-top: 16px;">Try YESEO ↗</a>
       </div>
 
       <!-- Newsday Mobile Modernization -->
@@ -346,28 +368,32 @@
           <span class="project-status" style="background:rgba(124,58,237,0.1);color:#7c3aed;">Platform Modernization</span>
         </div>
         <h3>Newsday Mobile Platform Modernization</h3>
-        <p>Led full mobile platform modernization (SwiftUI, Jetpack Compose) across iOS and Android, including TV app launches. Drove <strong>265% YoY growth</strong> in subscriber purchases.</p>
+        <p>Led the full mobile platform modernization (SwiftUI, Jetpack Compose) across iOS and Android, including TV app launches. Drove <strong>265% YoY growth</strong> in in-app subscriber purchases.</p>
         <div class="project-tags">
           <span class="tag" style="background:rgba(124,58,237,0.1);color:#7c3aed;">SwiftUI</span>
           <span class="tag" style="background:rgba(124,58,237,0.1);color:#7c3aed;">Jetpack Compose</span>
           <span class="tag" style="background:rgba(124,58,237,0.1);color:#7c3aed;">TV Apps</span>
         </div>
         <div class="project-metrics">
-          <div class="metric"><span class="metric-value">265%</span><span class="metric-label">Growth YoY</span></div>
-          <div class="metric"><span class="metric-value">6+</span><span class="metric-label">Platforms</span></div>
+          <div class="metric"><span class="metric-value">265%</span><span class="metric-label">Subscriber Growth YoY</span></div>
+          <div class="metric"><span class="metric-value">2</span><span class="metric-label">Platforms</span></div>
         </div>
-        <a href="https://apps.apple.com/us/app/newsday/id365834197" target="_blank" rel="noopener" class="project-link">Get on the App Store ↗</a>
+        <div class="project-app-links" style="margin-top:12px;">
+          <a href="https://apps.apple.com/us/app/newsday/id365834197" target="_blank" rel="noopener" class="project-app-store-link">
+            <span class="app-store-icon">📱</span><span class="app-store-text">Get Newsday on the App Store</span>
+          </a>
+          <a href="https://www.newsday.com/services/newsday-apps-ios-android-wdhvqyhx" target="_blank" rel="noopener" class="project-app-link-secondary">App Info Page ↗</a>
+        </div>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- === PRESS === -->
-<section id="press-section" class="section section-alt">
+<!-- ==== PRESS / FEATURED — LENFEST FEATURED CARDS ==== -->
+<section id="press" class="section">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">Press &amp; Featured In</span>
+      <span class="section-tag">Press / Featured In</span>
       <h2 class="section-title">Stories &amp; Coverage</h2>
     </div>
 
@@ -380,7 +406,7 @@
         <div class="press-featured-content">
           <span class="press-featured-type award">Award Finalist</span>
           <h3>2024 Online Journalism Awards — Excellence in AI Innovation</h3>
-          <p class="press-featured-summary">From 182 projects submitted globally, Ryan Restivo's YESEO was selected as a finalist for combining <strong>real-time AI assistance with privacy-first data handling</strong> — meaning newsrooms get SEO intelligence without sending story drafts or subscriber data to third-party APIs.</p>
+          <p class="press-featured-summary">From 182 projects submitted globally, Ryan Restivo's YESEO was selected as a finalist by the ONA jury for combining <strong>real-time AI assistance with privacy-first data handling</strong> — meaning newsrooms get SEO intelligence without sending story drafts or subscriber data to third-party APIs.</p>
           <a href="https://awards.journalists.org/2024/08/09/ona-reveals-the-2024-online-journalism-awards-finalists/" target="_blank" rel="noopener" class="press-featured-link">Read Full ONA Announcement ↗</a>
         </div>
       </div>
@@ -409,16 +435,15 @@
   </div>
 </section>
 
-<!-- === EDUCATION === -->
-<section id="education" class="section">
+<!-- ==== EDUCATION — LENFEST CARDS ==== -->
+<section id="education" class="section section-alt">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">Education &amp; Skills</span>
+      <span class="section-tag">Education</span>
       <h2 class="section-title">Background</h2>
     </div>
-    <div class="about-grid" style="max-width:900px">
-
-      <div style="display:flex;flex-direction:column;gap:16px">
+    <div class="education-grid">
+      <div class="education-primary">
         <div class="education-card">
           <div class="edu-icon">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 3L2 10l14 7 14-7L16 3zM6 13v7l10 5 10-5v-7" stroke="#0066a0" stroke-width="2" fill="none"/><path d="M6 20v9l10 3 10-3v-9" stroke="#0066a0" stroke-width="2" fill="none"/></svg>
@@ -429,31 +454,14 @@
             <p class="edu-degree">Bachelor of Arts, Communications</p>
           </div>
         </div>
-        <div class="education-secondary">
-          <div class="edu-small-box">
-            <span class="edu-small-source">Craig Newmark CUNY</span>
-            <h4>Entrepreneurial Journalism Creators Program</h4>
-            <p>Cohort #7</p>
-          </div>
-          <div class="edu-small-box">
-            <span class="edu-small-source">Reforge</span>
-            <h4>Retention & Engagement</h4>
-            <p>May 2023</p>
-          </div>
-          <div class="edu-small-box">
-            <span class="edu-small-source">Knight Center</span>
-            <h4>Hands-On Data Journalism</h4>
-            <p>June 2021</p>
-          </div>
-          <div class="edu-small-box">
-            <span class="edu-small-source">Knight Center</span>
-            <h4>Product Management for Newsroom Leaders</h4>
-            <p>May 2019</p>
-          </div>
-        </div>
       </div>
-
-      <div class="skills-section" style="margin-top:0">
+      <div class="education-cards">
+        <div class="edu-small-card"><span class="edu-source">Craig Newmark CUNY</span><h4>Entrepreneurial Journalism Creators Program</h4><p>Cohort #7</p></div>
+        <div class="edu-small-card"><span class="edu-source">Reforge</span><h4>Retention &amp; Engagement</h4><p>May 2023</p></div>
+        <div class="edu-small-card"><span class="edu-source">Knight Center</span><h4>Hands-On Data Journalism</h4><p>June 2021</p></div>
+        <div class="edu-small-card"><span class="edu-source">Knight Center</span><h4>Product Management for Newsroom Leaders</h4><p>May 2019</p></div>
+      </div>
+      <div class="skills-section">
         <h3 class="skills-title">Skills &amp; Technologies</h3>
         <div class="skills-list">
           <span class="skill">Python</span>
@@ -473,17 +481,15 @@
           <span class="skill">Mobile TV Apps</span>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- === MORE EXPERIENCE === -->
-<section id="bluebook" class="section section-alt">
+<!-- ==== BLUEBOOK ==== -->
+<section id="bluebook" class="section">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">Additional Experience</span>
-      <h2 class="section-title">Beyond the Main Roles</h2>
+      <h2 class="section-title">Additional Experience</h2>
     </div>
     <div class="bluebook-grid">
       <div class="bluebook-card">
@@ -504,7 +510,7 @@
   </div>
 </section>
 
-<!-- ==== FOOTER ==== -->
+<!-- ==== FOOTER — DENFEST/POYNTER STYLE ==== -->
 <footer id="footer" class="footer">
   <div class="container">
     <div class="footer-inner">
@@ -520,8 +526,8 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 Ryan Restivo. Visual design system inspired by web-yeseo. Built with Hermes Agent running Ollama + Qwen 3.6 latest on an M4 MacBook Pro, followed by manual editing for length, clarity and language from Ryan Restivo.</p>
-      <p class="build-provenance" style="margin-top:12px;font-size:0.78rem;color:var(--stone-400);max-width:780px;text-align:center;">
+      <p>© 2026 Ryan Restivo. Built with Hermes Agent running Ollama + Qwen 3.6 latest on an M4 MacBook Pro, then followed by manual editing for length, clarity and language from Ryan Restivo.</p>
+      <p class="build-provenance" style="margin-top:12px;font-size:0.78rem;color:var(--gray-500);max-width:780px;text-align:center;">
         Powered by <a href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noopener">Hermes Agent</a> (autonomous CLI-driven AI agent with full toolchain: browser, terminal, file, code, git, PR automation) + a local large language model — built entirely via autonomous agent workflows: chrome + curl for data collection → qwen 3.6:latest for generation → hermes-agent for orchestration → python3.11.5 for scripting. All data sourced from Ryan Restivo's public professional resume, cover letter, and yeseo.app press page via hermes-agent session context.
       </p>
     </div>
@@ -543,11 +549,7 @@ document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 // Counter animation
 function animateCounters() {
-  document.querySelectorAll('.counter-value').forEach(counter => {
-    // If already has real display values (e.g. "60,000" or "265%"), skip animation
-    // Only animate elements that have a data-target attribute
-    if (!counter.dataset.target) return;
-    const container = counter.querySelector('strong') || counter;
+  document.querySelectorAll('.stat-number').forEach(counter => {
     const target = parseInt(counter.dataset.target);
     const suffix = counter.dataset.suffix || '';
     const comma = counter.dataset.comma === 'true';
@@ -560,11 +562,7 @@ function animateCounters() {
         clearInterval(timer);
       }
       const display = comma ? current.toLocaleString() : current;
-      if (container.tagName === 'STRONG') {
-        container.textContent = display;
-      } else {
-        counter.textContent = display;
-      }
+      counter.textContent = display;
     }, 25);
   });
 }
@@ -576,9 +574,8 @@ const heroObserver = new IntersectionObserver((entries) => {
     heroObserver.unobserve(entries[0].target);
   }
 }, { threshold: 0 });
-const heroEl = document.querySelector('.hero-inner') || document.querySelector('.hero');
-if (heroEl) {
-  heroObserver.observe(heroEl);
+if (document.querySelector('.hero-stats')) {
+  heroObserver.observe(document.querySelector('.hero-stats'));
 }
 
 // Smooth scroll

@@ -223,13 +223,15 @@ a:hover { color: var(--seo-blue-light); }
   margin-top: 8px;
 }
 .hero-tagline {
-  margin-top: 20px;
-  font-size: 1.1rem;
-  color: #e0f2fe;
-  max-width: 640px;
+  margin-top: 24px;
+  font-size: 1.2rem;
+  color: #f0f9ff;
+  max-width: 720px;
   margin-left: auto;
   margin-right: auto;
-  line-height: 1.8;
+  line-height: 1.85;
+  text-shadow: 0 2px 8px rgba(0, 20, 40, 0.45);
+  font-weight: 500;
 }
 .hero-actions {
   display: flex;
