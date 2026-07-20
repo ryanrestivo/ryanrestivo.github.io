@@ -759,14 +759,39 @@ a:hover { color: var(--seo-blue-light); }
   max-width: 900px;
   margin: 0 auto;
 }
-.education-card {
+.education-card-marist {
   display: flex;
   align-items: center;
   gap: 20px;
-  background: var(--seo-blue-ghost);
-  border: 2px solid var(--seo-blue-pale);
+  background:
+    url('assets/marist-seal.svg'),
+    linear-gradient(135deg, #0f172a 0%, #1e293b 40%, #334155 100%);
+  background-size:
+    40% auto,
+    100% 100%;
+  background-position:
+    right 20px center,
+    center center;
+  background-repeat:
+    no-repeat,
+    no-repeat;
+  background-blend-mode:
+    soft-light,
+    normal;
+  opacity: 0.95;
   border-radius: var(--radius-xl);
   padding: 28px;
+  border: 2px solid #1e293b;
+  position: relative;
+  color: #e2e8f0;
+}
+
+.education-card-marist h3 {
+  color: #e2e8f0;
+}
+
+.education-card-marist:hover {
+  border-color: #475569;
 }
 .education-card:hover {
   border-color: var(--seo-blue-mid);
