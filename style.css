@@ -816,7 +816,7 @@ a:hover { color: var(--seo-blue-light); }
 }
 .edu-degree {
   font-size: 0.95rem;
-  color: var(--stone-600);
+  color:  #fff;
 }
 
 .education-secondary {
