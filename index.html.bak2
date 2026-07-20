@@ -589,7 +589,7 @@ document.querySelectorAll('.scroll-link').forEach(link => {
 
 // Press stories (populated by JS)
 const pressStories = [
-  { title: "How The Oglethorpe Echo boosts newsroom with AI", source: "JournalismAI", date: "Nov 2024", type: "press", url: "https://www.journalismai.info/programmes/innovation/innovation-challenge-2024/the-oglethorpe-echo" },
+  { title: "How The Oglethorpe Echo boosts newsroom with AI", source: "JournalismAI", date: "Nov 2025", type: "press", url: "https://www.journalismai.info/programmes/innovation/innovation-challenge-2024/the-oglethorpe-echo" },
   { title: "Boost Your Visibility: How YESEO Enhances SEO for Journalists with Ryan Restivo", source: "AI in Journalism with Yumi Wilson", date: "Sep 2024", type: "podcast", url: "https://yeseo.app/press" },
   { title: "Here's how 7 news audience directors are thinking about Google's AI Overviews", source: "Nieman Journalism Lab", date: "Aug 2024", type: "press", url: "https://www.niemanlab.org/2024/08/how-7-news-audience-directors-are-thinking-about-responding-to-googles-ai-overviews/" },
   { title: "BBC, THE CITY and YESEO selected as award finalists for Excellence in AI Innovation", source: "Online News Association", date: "Aug 2024", type: "award", url: "https://awards.journalists.org/entries/yeseo/" },
