@@ -8,8 +8,8 @@ const pressData = [
   {
     title: "How The Oglethorpe Echo boosts newsroom with AI",
     source: "JournalismAI",
-    url: "https://www.journalismai.info/programmes/innovation/innovation-challenge-2024/the-oglethorpe-echo",
-    date: "Nov 2024",
+    url: "https://www.journalismai.info/blog/7hyych4p1qk548nbwmmr95xnri43fu",
+    date: "Nov 2025",
     type: "press",
     featured: true,
   },
@@ -54,7 +54,7 @@ const pressData = [
   {
     title: "Streamlining Local News: How YESEO is Transforming Journalism Efficiency",
     source: "Small Press, Big Ideas (Podcast)",
-    url: "https://localpod.co/streamlining-local-news-how-yesseo-is-transforming-journalism-efficiency/",
+    url: "https://www.youtube.com/watch?v=yQCZcwvosSM",
     date: "Aug 2024",
     type: "podcast",
   },
