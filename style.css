@@ -294,11 +294,8 @@ a:hover { color: var(--seo-blue-light); }
   display: grid;
   grid-template-columns: 1fr;
   gap: 28px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-@media (min-width: 640px) {
-  .testimonial-grid { grid-template-columns: repeat(2, 1fr); }
+  width: 100%;
+  margin: 0;
 }
 .testimonial-card {
   background: #fff;
