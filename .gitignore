@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Editor / backup artifacts
+index.html.bak2
+*.bak2
+*.bak
+
+# One-off site build script (generates index.html, not served)
+build_index_part2.py
