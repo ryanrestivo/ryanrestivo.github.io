@@ -34,7 +34,7 @@ That's it. No build step. No Node. No server.
 | Windows | `start index.html` |
 | Any | Double-click `index.html` in Finder/Explorer |
 
-The CSS and JS are locally referenced (`href="style.css"`, `src="script.js"`), so all dependencies resolve from the same directory.
+The CSS is locally referenced (`href="style.css"`) and the JS is inline in `index.html`, so all dependencies resolve from the same directory with no external script files.
 
 ### Recommended editor setup
 
@@ -70,10 +70,8 @@ gh pr create --title "my-change" --body "..." # with gh cli
 
 ```
 ryanrestivo.github.io/
-├── index.html   ← All page content (semantic HTML5)
+├── index.html   ← All page content (semantic HTML5) + inline JS (press grid, scroll reveal, photo gallery)
 ├── style.css    ← All styles (CSS custom properties, flexbox, grid)
-├── script.js    ← Interactivity (counters, scroll reveals, etc.)
-├── imgs/        ← Photos and graphics
 ├── CHANGELOG.md ← This file — change log
 ├── QUICKSTART.md ← This file — quickstart guide
 └── README.md    ← Project README

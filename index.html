@@ -41,9 +41,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ryan Restivo — Product Leader, AI Innovator, Entrepreneur</title>
+  <!-- Progressive enhancement: the `.js` class lets CSS hide .reveal sections
+       ONLY when JS is available. Inline in the head so it runs before first
+       paint (the reveal gate + IntersectionObserver depend on it). -->
+  <script>document.documentElement.className += ' js';</script>
+  <!-- Google Fonts: both families in ONE stylesheet request (was two separate
+       css2 calls = two round-trips). Inter is the body/UI face, Playfair the display face. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <!-- Preconnect the 3 third-party image origins that serve the hero + press
+       photos so their TCP/TLS handshake overlaps page load instead of blocking
+       first paint of the above-the-fold hero. All three origins verified 200. -->
+  <link rel="preconnect" href="https://www.newsmediahelpdesk.org">
+  <link rel="preconnect" href="https://rjionline.org">
+  <link rel="preconnect" href="https://www.yeseo.app">
   <link rel="stylesheet" href="style.css">
   <script type="application/ld+json">
     {
@@ -650,46 +662,6 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-// Counter animation
-function animateCounters() {
-  document.querySelectorAll('.counter-value').forEach(counter => {
-    // If already has real display values (e.g. "60,000" or "265%"), skip animation
-    // Only animate elements that have a data-target attribute
-    if (!counter.dataset.target) return;
-    const container = counter.querySelector('strong') || counter;
-    const target = parseInt(counter.dataset.target);
-    const suffix = counter.dataset.suffix || '';
-    const comma = counter.dataset.comma === 'true';
-    let current = 0;
-    const increment = Math.ceil(target / 60);
-    const timer = setInterval(() => {
-      current += increment;
-      if (current >= target) {
-        current = target;
-        clearInterval(timer);
-      }
-      const display = comma ? current.toLocaleString() : current;
-      if (container.tagName === 'STRONG') {
-        container.textContent = display;
-      } else {
-        counter.textContent = display;
-      }
-    }, 25);
-  });
-}
-
-// Trigger counters when hero is visible
-const heroObserver = new IntersectionObserver((entries) => {
-  if (entries[0].isIntersecting) {
-    animateCounters();
-    heroObserver.unobserve(entries[0].target);
-  }
-}, { threshold: 0 });
-const heroEl = document.querySelector('.hero-inner') || document.querySelector('.hero');
-if (heroEl) {
-  heroObserver.observe(heroEl);
-}
 
 // Smooth scroll
 document.querySelectorAll('.scroll-link').forEach(link => {

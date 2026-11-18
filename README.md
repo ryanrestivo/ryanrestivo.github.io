@@ -38,21 +38,17 @@ Hosted at: `https://ryanrestivo.github.io`
 
 ```
 ryanrestivo.github.io/
-├── index.html          # Main portfolio page (all sections)
+├── index.html          # Main portfolio page (all sections + inline JS)
 ├── style.css           # Full stylesheet (responsive, print, animations)
-├── script.js           # Interactive functionality (scroll reveal, counters, press data)
-├── README.md           # This file
-└── imgs/               # Image assets (headshot, GIFs, screenshots)
+└── README.md           # This file
 ```
 
 ### File Purposes
 
 | File | Size | Role |
 |------|------|------|
-| `index.html` | ~27KB | All HTML sections: hero, about, experience, projects, press, education, blue book, footer |
+| `index.html` | ~40KB | All HTML sections (hero, about, experience, projects, press, education, blue book, footer) plus the inline JS (scroll reveal, press grid, photo gallery) |
 | `style.css` | ~24KB | Design system with variables, 20+ keyframe animations, responsive breakpoints, print styles |
-| `script.js` | ~10KB | Press data rendering, scroll reveal via IntersectionObserver, counter animations, parallax orbs, smooth scroll |
-| `imgs/` | ~8MB | Headshot, GIFs (weather bot, Python script), YESEO screenshots |
 
 ## 🎨 Design System
 
@@ -160,7 +156,7 @@ python3 -m http.server 8080
 
 ### Adding a Press Entry
 
-Add to the `pressData` array in `script.js`:
+Add to the `pressStories` array in the inline `<script>` in `index.html`:
 
 ```javascript
 {
@@ -193,7 +189,7 @@ Add to `index.html` in the timeline section:
 
 ### Replacing Image Placeholders
 
-1. Add your image to the `imgs/` folder
+1. Add your image file to the repository root (or a new `imgs/` folder)
 2. Replace the SVG in `index.html`:
 
 ```html
@@ -223,8 +219,8 @@ Add to `index.html` in the timeline section:
 |---------------|---------------|
 | Colors/variables | `:root` in `style.css` |
 | Animation timing | `@keyframes` in `style.css` |
-| Press data | `pressData` array in `script.js` |
-| Stats numbers | `data-target` attributes in `index.html` |
+| Press data | `pressStories` array in the inline `<script>` in `index.html` |
+| Stats numbers | `<strong>` values in the hero stats (`.counter-value`) in `index.html` |
 | Skills list | Skills section in `index.html` |
 | Breakpoints | `@media` queries at bottom of `style.css` |
 

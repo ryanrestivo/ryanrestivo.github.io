@@ -18,12 +18,10 @@ This document describes how `ryanrestivo.github.io` was built from scratch in a 
 
 | File | Lines | Bytes | Purpose |
 |------|-------|-------|---------|
-| `index.html` | 489 | ~28KB | All 8 sections: Hero, About, Experience, Projects, Press, Education, Blue Book, Footer |
-| `style.css` | ~580 | ~24KB | 30+ CSS custom properties, 22 keyframe animations, responsive breakpoints (@900px, @600px, print), card layouts, timeline styling, gradient backgrounds, SVG filters |
-| `script.js` | ~340 | ~10KB | Press grid rendering from JS data array, scroll reveal via IntersectionObserver, animated stat counters, parallax scroll on orbs, smooth scroll for nav links |
-| `README.md` | ~380 | ~8KB | Full documentation: design system, tech stack, customization guide, contribution instructions, local preview commands |
-| `BUILD.md` | ~250 | ~8KB | This file — full build provenance documentation |
-| `imgs/` | 12+ files | ~8MB | Headshot placeholder, GIFs (weather bot, Python script), YESEO screenshots in original repo |
+| `index.html` | ~770 | ~40KB | All 8 sections (Hero, About, Experience, Projects, Press, Education, Blue Book, Footer) + the inline JS (press grid rendering, scroll reveal, photo gallery) |
+| `style.css` | ~1190 | ~24KB | CSS custom properties, keyframe animations, responsive breakpoints, print styles, card layouts, timeline styling, gradient backgrounds, SVG filters |
+| `README.md` | ~240 | ~8KB | Full documentation: design system, tech stack, customization guide, contribution instructions, local preview commands |
+| `BUILD.md` | ~150 | ~8KB | This file — full build provenance documentation |
 
 ## Design Decisions
 
@@ -60,7 +58,7 @@ All visuals are inline SVGs — no external image dependencies for icons/diagram
 - **Footer**: Wavy gradient decorative element
 
 ### Press Data Architecture
-The 22 press entries are embedded as a JavaScript array in `script.js` (not loaded from an API). Each entry carries:
+The 22 press entries are embedded as a JavaScript array in the inline `<script>` at the bottom of `index.html` (the `pressStories` array; not loaded from an API). Each entry carries:
 - `title`, `source`, `url`, `date`
 - `type` (press, video, award, speaking, podcast) — for color-coded badges
 - `featured` flag for top-4 sorting
@@ -87,7 +85,7 @@ Add a `CNAME` file with your domain, then configure DNS at your registrar.
 ## Customization Guide
 
 ### Adding Press Entries
-Open `script.js`, find the `pressData` array, add:
+Open `index.html`, find the `pressStories` array (inline `<script>` at the bottom), add:
 ```js
 {
   title: "Article title here",
