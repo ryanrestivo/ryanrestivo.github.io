@@ -2,6 +2,57 @@
 
 All notable changes to the portfolio site are documented here.
 
+## [Unreleased] — 2026-11-18
+
+### Added (performance + accessibility)
+
+- **Consolidated Google Fonts into a single request.** The two separate
+  `css2?family=…` `<link>` tags (Playfair Display + Inter) are now ONE
+  combined `css2` request — one fewer round-trip before the fonts can paint.
+  Verified the combined URL returns HTTP 200 with both families present.
+- **`preconnect` hints** for `fonts.gstatic.com` (the actual font-file origin,
+  which was previously NOT preconnected) and for the 3 third-party image
+  origins the hero/press photos are served from (newsmediahelpdesk.org,
+  rjionline.org, yeseo.app) so their TCP/TLS handshakes overlap first paint.
+  All three origins verified to serve HTTP 200.
+- **Progressive-enhancement scroll reveal.** Previously `.reveal` set
+  `opacity:0` unconditionally, so any section (the 8 static cards + the
+  JS-rendered press grid) that wasn't observed by the
+  `IntersectionObserver` stayed invisible. The hidden/animated state is now
+  gated behind an `html.js` class that the inline head script sets, so:
+  - **No-JS / no-IntersectionObserver visitors still see all content**
+    (the press grid no longer renders as a blank card).
+  - **`prefers-reduced-motion: reduce` users get the content with no fade**
+    (new media query).
+- **CHANGELOG entry** (this one) for faster review.
+
+### Removed (dead weight — nothing in the live page references these)
+
+Removed 18 files that `index.html`, `style.css`, and the single inline
+`<script>` do not load. Verified by repo-wide scan: no dangling reference
+to any of them, and no `url()`/`<img>`/`<link>`/`<script src>` target:
+- `OJA_YESEO.css` (~1.5 MB, unreferenced)
+- `press-fix.css` (unreferenced)
+- `script.js` (never loaded — all live JS is the inline `<script>` in
+  `index.html`; `script.js` was a stale copy from an earlier iteration)
+- `scripts/old-script.js`, `scripts/old-resume.js`, `scripts/education.js`,
+  `scripts/link.js`, `scripts/resume.js`, `scripts/script.js` (all orphaned)
+- `afrola_logo.png` (unreferenced)
+- `imgs/` (all 8 files: 3 `.PNG`, 2 `.jpg`, 1 `.jpeg`, 3 `.gif` — none loaded)
+
+### Changed
+
+- **Removed the no-op stat-counter animation.** The inline `animateCounters()`
+  + `heroObserver` block was dead: it only animated elements with a
+  `data-target` attribute, but the live hero stats are plain `<strong>`
+  values with no `data-target`. Supersedes the 2026-06-05 note about
+  `data-target` — there is no `data-target` on the live site and the counter
+  code never did anything; the stat values are rendered as static `<strong>`
+  text (which is also what a no-JS visitor relies on).
+- **README / QUICKSTART / BUILD** updated to match the post-cleanup file
+  tree (index.html now owns the inline JS + press-data array; dropped the
+  `script.js` and `imgs/` rows that no longer exist).
+
 ## [Unreleased] — 2026-06-05
 
 ### Changed
